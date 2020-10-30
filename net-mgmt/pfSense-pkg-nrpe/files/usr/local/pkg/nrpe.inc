@@ -256,6 +256,7 @@ function nrpe_custom_php_validation_command($post, &$input_errors) {
 
 function nrpe_sync_config() {
 	global $config;
+	init_config_arr(array('hasync'));
 	if (!is_array($config['hasync'])) {
 		return -1;
 	}
